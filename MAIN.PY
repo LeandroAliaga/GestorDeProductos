@@ -142,7 +142,7 @@ class ProductApp:
         self.clear_table()
         
         today = datetime.today().date()
-        soon = today + timedelta(days=30)
+        soon = today + timedelta(days=60)
         
         query = "SELECT * FROM products"
         self.cursor.execute(query)
